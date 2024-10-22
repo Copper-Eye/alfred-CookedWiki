@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.github.coopereye.cookedwiki</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>1182856F-B287-4567-AF0F-B827F3746B81</key>
@@ -186,7 +188,7 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>keyword</key>
 				<string>{var:cook_keyword}</string>
 				<key>subtext</key>
@@ -267,7 +269,7 @@ Open the frontmost browser tab or a typed URL as a [Cooked Wiki](https://cooked.
 ---
 
 Changelog:
-- Added custom keyword. Updated About, Bundle Id, and Description. Simplified objects.
+- Added custom keyword. Updated About, Bundle Id, and Description. Simplified objects. (Contributed by @vitorgalvao)
 - Updated to no-code solution using only Alfred base functions, supporting all browsers.
 - Initial release with script filter.</string>
 	<key>uidata</key>
