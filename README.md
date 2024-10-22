@@ -1,5 +1,5 @@
-![DF925285-7EB3-4235-849E-5581EDB0530E](https://github.com/user-attachments/assets/587d7d25-840b-4096-9e4d-7e5172fbffed)# alfred-CookedWiki
-A CookedWiki Alfred Workflow to open recipes in a readable and scalable format.
+![DF925285-7EB3-4235-849E-5581EDB0530E](https://github.com/user-attachments/assets/587d7d25-840b-4096-9e4d-7e5172fbffed)
+<h2> A CookedWiki Alfred Workflow to open recipes in a readable and scalable format. </h2>
 
 V1.0.0
 
