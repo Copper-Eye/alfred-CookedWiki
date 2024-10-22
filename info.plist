@@ -3,16 +3,77 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.cookedwiki.base</string>
-	<key>category</key>
-	<string>Productivity</string>
+	<string>com.github.coopereye.cookedwiki</string>
 	<key>connections</key>
 	<dict>
-		<key>660012B6-B741-419D-AECB-1DE38ABB3082</key>
+		<key>1182856F-B287-4567-AF0F-B827F3746B81</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>116832E8-E504-48DB-AE88-7B7289FEF7DA</string>
+				<string>1EC3F27B-BA2A-40F2-A736-C99711AD4820</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1EC3F27B-BA2A-40F2-A736-C99711AD4820</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>326F36D1-FBC1-468E-8C95-8B1D616273BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>E0D0533A-38B8-4958-91F5-8EA50060C37F</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>20BD6F92-64F4-4FCC-9D95-D1627D88E6D6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>326F36D1-FBC1-468E-8C95-8B1D616273BC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>69C57E8B-3D63-44AF-8C13-BA2F7269D543</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>69C57E8B-3D63-44AF-8C13-BA2F7269D543</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>732D536F-755E-44CD-9409-BB402BACB8DB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A285EDBD-6A88-49F2-A68E-DE92F2D3F162</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8C184B3E-94EA-4430-A610-8F69D1B55A9C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -25,7 +86,7 @@
 	<key>createdby</key>
 	<string>Dom Robson-Tull</string>
 	<key>description</key>
-	<string>Open up Recipes in an easy to read format with 'Cook'. To use this tool, either have the website with the recepie URL on in Chrome/Safari, then type 'cook' to automatically grab the url and generate the recipe. Or manually enter the url with 'cook &lt;url&gt;'.</string>
+	<string>Open webpages in CookedWiki</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -35,140 +96,261 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>skipvarencode</key>
-				<true/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Missing URL or no browser tab currently open.</string>
+				<key>title</key>
+				<string>CookedWiki</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>116832E8-E504-48DB-AE88-7B7289FEF7DA</string>
+			<string>732D536F-755E-44CD-9409-BB402BACB8DB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
+				<key>tasksettings</key>
+				<dict>
+					<key>allow_empty</key>
+					<true/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.extras/web-browsers/frontmost-browser/frontmost.tabs.current</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>326F36D1-FBC1-468E-8C95-8B1D616273BC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>empty</string>
+						<key>uid</key>
+						<string>A285EDBD-6A88-49F2-A68E-DE92F2D3F162</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>69C57E8B-3D63-44AF-8C13-BA2F7269D543</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>url</key>
+					<string>https://cooked.wiki/{query}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.extras/web-browsers/frontmost-browser/frontmost.tabs.current.url</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>8C184B3E-94EA-4430-A610-8F69D1B55A9C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>keyword</key>
-				<string>cook</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>#!/bin/bash
-
-QUERY="{query}"
-
-# Check if the user provided an argument (a URL)
-if [ -n "$QUERY" ]; then
-    URL="$QUERY"  # User-supplied URL
-else
-    # Get the current URL from the active browser
-    URL=$(osascript -e '
-    tell application "System Events"
-        set frontApp to name of first application process whose frontmost is true
-    end tell
-    if frontApp is "Safari" then
-        tell application "Safari" to return URL of front document
-    else if frontApp is "Google Chrome" then
-        tell application "Google Chrome" to return URL of active tab of front window
-    else
-        return "Browser not supported"
-    end if
-    ')
-fi
-
-# Clean up the URL by removing any trailing newlines or spaces
-URL=$(echo "$URL" | sed 's/[[:space:]]*$//')
-
-    MODIFIED_URL="https://cooked.wiki/${URL}"  # Prepend if not a full URL
-
-# Output in Alfred-friendly JSON format
-cat &lt;&lt; EOB
-{
-    "items": [
-        {
-            "title": "Open Recipe for $URL",
-            "subtitle": "$MODIFIED_URL",
-            "arg": "$MODIFIED_URL"
-        }
-    ]
-}
-EOB
-</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
+				<string>{var:cook_keyword}</string>
 				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>CookingWiki</string>
-				<key>type</key>
-				<integer>0</integer>
+				<string>Hit ↩ to update current tab to a recipe format. Or enter URL manually.</string>
+				<key>text</key>
+				<string>CookedWiki</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>660012B6-B741-419D-AECB-1DE38ABB3082</string>
+			<string>1182856F-B287-4567-AF0F-B827F3746B81</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>empty</string>
+						<key>uid</key>
+						<string>E0D0533A-38B8-4958-91F5-8EA50060C37F</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>1EC3F27B-BA2A-40F2-A736-C99711AD4820</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://cooked.wiki/{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>20BD6F92-64F4-4FCC-9D95-D1627D88E6D6</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>## Usage
+
+Open the frontmost browser tab or a typed URL as a [Cooked Wiki](https://cooked.wiki) page via the `cook` keyword.
+
+![Screenshot showing keyword](screenshot.png)
+
+---
+
+Changelog:
+- Added custom keyword. Updated About, Bundle Id, and Description. Simplified objects.
+- Updated to no-code solution using only Alfred base functions, supporting all browsers.
+- Initial release with script filter.</string>
 	<key>uidata</key>
 	<dict>
-		<key>116832E8-E504-48DB-AE88-7B7289FEF7DA</key>
+		<key>1182856F-B287-4567-AF0F-B827F3746B81</key>
 		<dict>
 			<key>xpos</key>
-			<real>235</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>205</real>
 		</dict>
-		<key>660012B6-B741-419D-AECB-1DE38ABB3082</key>
+		<key>1EC3F27B-BA2A-40F2-A736-C99711AD4820</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>190</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>225</real>
+		</dict>
+		<key>20BD6F92-64F4-4FCC-9D95-D1627D88E6D6</key>
+		<dict>
+			<key>xpos</key>
+			<real>275</real>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>326F36D1-FBC1-468E-8C95-8B1D616273BC</key>
+		<dict>
+			<key>xpos</key>
+			<real>275</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>69C57E8B-3D63-44AF-8C13-BA2F7269D543</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>110</real>
+		</dict>
+		<key>732D536F-755E-44CD-9409-BB402BACB8DB</key>
+		<dict>
+			<key>xpos</key>
+			<real>505</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>8C184B3E-94EA-4430-A610-8F69D1B55A9C</key>
+		<dict>
+			<key>xpos</key>
+			<real>505</real>
+			<key>ypos</key>
+			<real>125</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>cook</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>cook_keyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.3</string>
 	<key>webaddress</key>
-	<string>https://cooked.wiki/</string>
+	<string>https://github.com/Copper-Eye/alfred-CookedWiki</string>
 </dict>
 </plist>
